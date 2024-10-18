@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/8a85e9118b.js" crossorigin="anonymous"></script>
+    <title>Nuestra Boda: R&A</title>
+</head>
+<body>
+    <div id="inicio"></div>
+    <header>        
+        <nav class="navbar">
+            <div class="logo">R&A</div>
+            <input type="checkbox" id="toggler">
+            <label for="toggler" class="menu-label">
+                <div class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </label>
+            <div class="menu">
+                <ul class="lista">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#">Itinerario</a></li>
+                    <li><a href="#confirmar-asistencia">Confirmar asistencia</a></li>
+                </ul>
+            </div>
+        </nav>  
+    </header>
+    <section id="inicio" class="inicio">
+        <div class="centro">
+            <div class="titulos">
+                <h1>Raúl & Abi</h1>
+                <h2>¡Nos Casamos!</h2>
+            </div>
+            <div class="cuenta-regresiva">
+                <div class="elementos">
+                    <span id="dias"></span>
+                    <span class="texto">Dias</span>
+                </div>
+                <div class="elementos">
+                    <span id="horas"></span>
+                    <span class="texto">Horas</span>
+                </div>
+                <div class="elementos">
+                    <span id="minutos"></span>
+                    <span class="texto">Minutos</span>
+                </div>
+                <div class="elementos">
+                    <span id="segundos"></span>
+                    <span class="texto">Segundos</span>
+                </div>
+            </div>
+            <input type="button" class="confirmar" value="Confirmar Asistencia">
+        </div>
+    </section>
+    <section class="invitacion">
+        <img src="recursos/iconos/pareja.png" alt="" class="pareja">
+        <img src="recursos/titulos/titulo-boda.png" alt="" class="titulo-boda">
+        <p class="texto-biblico">"Por esa razón el hombre dejará a su padre y a su madre, se unirá a su esposa y los dos serán una sola carne."</p>
+        <p class="cita-biblica"><b>Efesios 5:31</b></p>
+        <div class="card-container">
+            <!-- Primera tarjeta -->
+            <div class="card">
+                <div class="image-container">
+                    <img src="recursos/raul y abi/imagen1.jpeg" alt="">
+                </div>
+                <h2 class="nombre-novios">Abilene Pool Mejía</h2>
+                <p></p>
+                <div class="icon">
+                    <i class="heart">❤</i>
+                </div>
+            </div>
+            <!-- Segunda tarjeta -->
+            <div class="card">
+                <div class="image-container">
+                    <img src="recursos/raul y abi/imagen1.jpeg" alt="">
+                </div>
+                <h2 class="nombre-novios">Raúl Canul Chan</h2>
+                <p>"¡Qué hermosa eres, amada mía!"</p>
+                <p></p>
+                <div class="icon">
+                    <i class="heart">❤</i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Galeria" id="galeria">
+        <img src="recursos/titulos/titulo-galeria.png" alt="" class="titulo-galeria">
+        <div class="container">
+            <div class="wrapper">
+            </div>
+        <button class="next-button"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+    <section class="itinerario">
+        <img src="recursos/titulos/itinerario.png" alt="" class="titulo-itinerario">
+        <div class="fecha">
+            <img src="recursos/iconos/dia-de-la-boda.png">
+            <h2>Lugar: Tekax, Yucatán</h2>
+            <h2>Fecha: 10 de Enero de 2025</h2>
+        </div>
+        <div class="contenedor-itinerario">
+            <div class="evento">
+                <img src="recursos/iconos/arco-de-la-boda.png">
+                <h2>Discurso de Boda</h2>
+                <h2>Lugar: Salón del Reino de los Testigos de Jehová</h2>
+                <h2>Hora: 3:00 P.M.</h2>
+                <a href="https://maps.app.goo.gl/nscNa4Uq8V5nQS2j8" class="ubi">
+                    <button class="ubicacion">
+                    <img src="recursos/iconos/lugar-de-la-boda.png" alt="" style="height: 40px;">
+                    Ver ubicación
+                    </button>
+                </a>
+            </div>
+            <div class="borde"></div>
+            <div class="evento">
+                <img src="recursos/iconos/camara-fotografica.png" alt="">
+                <h2>Sesión de fotos</h2>
+                <h2>Hora: 5:00 - 6:00 P.M.</h2>
+            </div>
+            <div class="borde" id="borde1"></div>
+            <div class="evento">
+                <img src="recursos/iconos/cena-romantica.png" alt="">
+                <h2>Recepción</h2>
+                <h2>Lugar: Salon de fiestas</h2>
+                <h2>Hora: 6:30 P.M.</h2>
+                <a href="https://maps.app.goo.gl/cPY3dwkhuLtUrchE6" class="ubi">
+                    <button class="ubicacion">
+                        <img src="recursos/iconos/lugar-de-la-boda.png" alt="" style="height: 40px;">
+                        Ver ubicación
+                    </button>
+                </a>
+            </div>
+            <div class="borde" id="borde2"></div>
+            <div class="evento">
+                <img src="recursos/iconos/baile.png" alt="">
+                <h2>Baile</h2>
+                <h2>Hora: 9:00 P.M. - Hasta que el cuerpo aguante</h2>
+            </div>
+        </div>
+        <div class="regalo">
+            <p>Su presencia es nuestro mejor regalo, pero si aún asi desea contribuir a nuestra futura vida juntos, hemos abierto un numero de cuenta</p>
+            <div class="tarjeta">
+                <div class="contenido-tarjeta">
+                    <span class="num-tarjeta">4198  2200 2585  7606</span>
+                    <span class="nombre">Luis Raúl Canul Chan</span>
+                </div>
+            </div>
+            <!-- <img src="recursos/iconos/caja-de-regalo.png" alt=""> -->
+        </div>
+    </section>
+    <section id="confirmar-asistencia" class="seccion-confirmar">
+        <div class="confirmacion-asistencia">
+            <h2 class="titulo-confirmar">Confirmación de Asistencia</h2>			
+			<div id="formulario-asistencia">
+                <div class="nota">
+                    <p>Por favor confirma antes del <b>1 Enero del 2025</b><br>¡Esperamos tu asistencia!</p>
+                </div>
+                <div class="asistencia-container">
+                    <label class="asistencia-title">¿Asistirás?</label>
+                    <label>
+                        <input type="radio" name="asistencia" value="si" onclick="toggleForm(true)">
+                        ¡Sí, asistiré!
+                    </label><br>
+                    <label>
+                        <input type="radio" name="asistencia" value="no" onclick="toggleForm(false)">
+                        Lo siento, no podré
+                    </label>
+                </div>
+                <div class="datos" id="datos-con">
+                    <div class="cuadro-datos">
+                        <div id="apellido-familia" class="form-group">
+                            <label for="apellido" class="texto-datos">Apellido de la Familia:</label><br>
+                            <input type="text" id="apellido" name="apellido" required class="apellidos">
+                            <button class="btn-apellidos" type="button" id="buscar-invitados">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <!-- Div para mostrar los resultados -->
+                        <div id="resultado-busqueda"></div>
+                    </div>
+                </div>
+                <button class="btn-confirmar">Confirmar</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="titulo-footer">
+            <div class="linea"></div>
+            <div class="texto">Diseño y Programacion por <b>Benjamin Sosa</b></div>
+            <div class="linea"></div>
+        </div>
+        <div class="foto">
+            <img class="programador" src="recursos\yo.jpg">
+            <div class="info-p">
+                <h3>Programador Junior en:</h3>
+                <ul>
+                    <li>HTML, CSS, Javascript</li>
+                    <li>C#</li>
+                    <li>Flutter y Dart</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+        </div>
+        <h3>Contacto:</h3>
+        <div class="redes">
+            <div><i class="fa-brands fa-whatsapp fa-xl"></i><br><span>985 112 1853</span></div>
+            <div><i class="fa-brands fa-facebook fa-xl"></i><br><span>Benjamin Sosa</span></div>
+            <div><i class="fa-brands fa-instagram fa-xl"></i><br><span>B_SosaM</span></div>
+            <div><i class="fa-solid fa-at fa-xl"></i><br><span>abransosam0331@gmail.com</span></div>
+            <div><i class="fa-brands fa-github fa-xl"></i><br><span>absm-0331</span></div>
+        </div>
+    </footer>
+	<script src="js/buscar_inv.js"></script>
+	<script src="js/confirmar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
